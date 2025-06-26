@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
     Rocket, Sparkles, Home, Info, Users, Book, Award, Mail, // Existing icons
-    Hospital, ClipboardList, BriefcaseMedical, FlaskConical, Stethoscope, GraduationCap, DollarSign, Facebook, Phone, MessageSquareText
+    Hospital, ClipboardList, BriefcaseMedical, FlaskConical,  Stethoscope,  GraduationCap, DollarSign,  Facebook, Phone, MessageSquareText
 } from 'lucide-react'; // Importing all necessary icons
 
 
@@ -23,16 +23,16 @@ const HomePage = ({ setCurrentPage }) => {
             <img
                 src="/img/logo/logo.png" // Assumes your logo is in public/img/logo/logo.png
                 alt="Institute Logo"
-                className="w-100 h-100 md:w-80 md:h-80 object-contain mb-6 rounded-lg" // Adjust size and rounding as needed
+                className="w-32 h-32 md:w-80 md:h-80 object-contain mb-6 rounded-lg" // Adjust size and rounding as needed
                 onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/160x160/cccccc/333333?text=LOGO"; }}
             />
 
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4 animate-fade-in-down text-center">
                 Welcome to RM Hospital Management Study Center
             </h1>
-            <p className="text-lg md:text-xl text-gray-700 mb-8 animate-fade-in-up text-center">
+            {/* <p className="text-lg md:text-xl text-gray-700 mb-8 animate-fade-in-up text-center">
                 Discover powerful solutions designed to elevate your experience and streamline your daily tasks. Join us on a journey of efficiency and creativity.
-            </p>
+            </p> */}
             <div className="flex justify-center space-x-4 mb-8 animate-fade-in-up delay-200">
                 <button
                     onClick={() => setCurrentPage('contact')}
@@ -118,7 +118,7 @@ const TutorsPage = () => {
     // IMPORTANT: For best quality, replace these with your actual high-resolution tutor images.
     // Images should ideally be at least 300x300px for a sharp display at 160x160px.
     const tutors = [
-        { name: "Mr. Ritwik Sarkar", title: "Founder & Tutor", qualification: "(BBA in HM, MHA, BA.LLb)", img: `/img/tutors/ritwik-sarkar.jpg`, alt: "Ritwik Sarkar" },
+        { name: "Mr. Ritwik Sarkar", title: "Co-Founder", qualification: "(BBA in HM, MHA, BA.LLb)", img: `/img/tutors/ritwik-sarkar.jpg`, alt: "Ritwik Sarkar" },
         { name: "Dr. Mohit Sarkar", title: "", qualification: "(B.Sc, M.Sc, P.hd)", img: `/img/tutors/mohit-sarkar.jpg`, alt: "Dr. Mohit Sarkar" },
         { name: "Mr. Samarjit Bose", title: "", qualification: "(B.Pharm, M.Pharm)", img: `/img/tutors/samarjit-bose.jpg`, alt: "Samarjit Bose" },
         { name: "Mr. Sayandip Biswas", title: "", qualification: "(B.Com)", img: `/img/tutors/sayandip-biswas.jpg`, alt: "Sayandip Biswas" },
@@ -198,9 +198,9 @@ const SubjectsPage = () => {
 // --- Success Stories Page Component ---
 const SuccessStoriesPage = () => {
     const stories = [
-        { name: "Aisha P.", testimonial: "Thanks to their amazing tutors, I aced my calculus exam! The personalized attention made all the difference.", img: "https://placehold.co/100x100/a78bfa/ffffff?text=AP" },
-        { name: "Ben S.", testimonial: "I struggled with physics, but after a few sessions, everything clicked. Highly recommend their science programs.", img: "https://placehold.co/100x100/8b5cf6/ffffff?text=BS" },
-        { name: "Chloe T.", testimonial: "Their history tutor helped me understand complex topics and improve my essay writing skills dramatically.", img: "https://placehold.co/100x100/7c3aed/ffffff?text=CT" },
+        { name: "Bidhidiptya Mondal", img: "/img/success_stories/bidhidiptya-mondal.jpg" }, // Assuming local image
+        { name: "Debjit Ghosh", img: "/img/success_stories/debjit-ghosh.jpg" },       // Assuming local image
+        { name: "Toppers", img: "/img/success_stories/toppers.jpg" },             // Assuming local image
     ];
     return (
         <div className="p-8 md:p-12 flex-1 flex flex-col">
@@ -212,15 +212,16 @@ const SuccessStoriesPage = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {stories.map((story, index) => (
-                    <div key={index} className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col items-center text-center transition-transform hover:scale-[1.02] duration-200 ease-in-out">
-                        <img
-                            src={story.img}
-                            alt={story.name}
-                            className="w-24 h-24 rounded-full object-cover mb-4 border-2 border-blue-400"
-                            onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/100x100/cccccc/333333?text=N/A"; }}
-                        />
-                        <h3 className="text-xl font-semibold text-gray-900 mb-2">{story.name}</h3>
-                        <p className="text-gray-600 italic">"{story.testimonial}"</p>
+                    <div key={index} className="bg-white p-6 rounded-xl shadow-lg border border-gray-200 flex flex-col justify-between items-center text-center transition-transform hover:scale-[1.02] duration-200 ease-in-out">
+                        <div className="w-75 h-75 overflow-hidden rounded-lg mb-4 border-2 border-blue-400 flex-shrink-0"> {/* Square container, flex-shrink-0 to prevent image from shrinking */}
+                            <img
+                                src={story.img}
+                                alt={story.name}
+                                className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-300 ease-in-out" // Grayscale and hover effect
+                                onError={(e) => { e.target.onerror = null; e.target.src = `https://placehold.co/400x400/cccccc/333333?text=Image%0AMissing`; }} // Adjusted fallback size
+                            />
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-900 mt-auto">{story.name}</h3> {/* mt-auto pushes it to the bottom */}
                     </div>
                 ))}
             </div>
@@ -301,7 +302,7 @@ const ContactUsPage = () => {
                     <div className="mt-4">
                         <h4 className="text-xl font-semibold text-gray-900 mb-2">Follow Us:</h4>
                         <div className="flex space-x-4">
-                            <a href="https://www.facebook.com/share/1FTGNtmcgH/" className="text-blue-600 hover:text-blue-800 transition-colors duration-200" aria-label="Facebook">
+                            <a href="https://www.facebook.com/share/1FTGNtmcgH/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition-colors duration-200" aria-label="Facebook">
                                 <Facebook size={24} /> {/* Facebook icon */}
                             </a>
                         </div>
