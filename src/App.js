@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
     Rocket, Sparkles, Home, Info, Users, Book, Award, Mail, // Existing icons
     Hospital, ClipboardList, BriefcaseMedical, FlaskConical, Stethoscope, GraduationCap, DollarSign, Facebook, Phone, MessageSquareText
