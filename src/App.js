@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
     Rocket, Sparkles, Home, Info, Users, Book, Award, Mail, // Existing icons
-    Hospital, ClipboardList, HeartPulse, BriefcaseMedical, FlaskConical, Microscope, Stethoscope, LineChart, GraduationCap, DollarSign, Briefcase, Facebook, Phone, MessageSquareText
+    Hospital, ClipboardList, BriefcaseMedical, FlaskConical, Stethoscope, GraduationCap, DollarSign, Facebook, Phone, MessageSquareText
 } from 'lucide-react'; // Importing all necessary icons
 
 
