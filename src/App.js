@@ -118,7 +118,7 @@ const TutorsPage = () => {
     // IMPORTANT: For best quality, replace these with your actual high-resolution tutor images.
     // Images should ideally be at least 300x300px for a sharp display at 160x160px.
     const tutors = [
-        { name: "Mr. Ritwik Sarkar", title: "Co-Founder", qualification: "(BBA in HM, MHA, BA.LLb)", img: `/img/tutors/ritwik-sarkar.jpg`, alt: "Ritwik Sarkar" },
+        { name: "Mr. Ritwik Sarkar", title: "Founder", qualification: "(BBA in HM, MHA, BA.LLb)", img: `/img/tutors/ritwik-sarkar.jpg`, alt: "Ritwik Sarkar" },
         { name: "Dr. Mohit Sarkar", title: "", qualification: "(B.Sc, M.Sc, P.hd)", img: `/img/tutors/mohit-sarkar.jpg`, alt: "Dr. Mohit Sarkar" },
         { name: "Mr. Samarjit Bose", title: "", qualification: "(B.Pharm, M.Pharm)", img: `/img/tutors/samarjit-bose.jpg`, alt: "Samarjit Bose" },
         { name: "Mr. Sayandip Biswas", title: "", qualification: "(B.Com)", img: `/img/tutors/sayandip-biswas.jpg`, alt: "Sayandip Biswas" },
