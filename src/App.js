@@ -203,7 +203,7 @@ const SuccessStoriesPage = () => {
         { name: "Toppers", img: "/img/success_stories/toppers.jpg" },             
         { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin.jpg"},
         { name: "Kohima Roy", img: "/img/success_stories/kohima_roy.jpg"},
-        { name: "Soumyadip Guin new", img: "/img/success_stories/Soumyadip_guin_new.jpg"},
+        { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin_new.jpg"},
         { name: "Tandrima Das", img: "/img/success_stories/Tandrima_Das.jpg"}
     ];
     return (
