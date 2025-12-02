@@ -202,7 +202,9 @@ const SuccessStoriesPage = () => {
         { name: "Debjit Ghosh", img: "/img/success_stories/debjit-ghosh.jpg" },       // Assuming local image
         { name: "Toppers", img: "/img/success_stories/toppers.jpg" },             // Assuming local image
         { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin.jpg"},
-        { name: "Kohima Roy", img: "/img/success_stories/kohima_roy.jpg"}
+        { name: "Kohima Roy", img: "/img/success_stories/kohima_roy.jpg"},
+        { name: "Kohima Roy", img: "/img/success_stories/Soumyadip_guin_new.jpg"},
+        { name: "Kohima Roy", img: "/img/success_stories/Tandrima_Das.jpg"}
     ];
     return (
         <div className="p-8 md:p-12 flex-1 flex flex-col">
