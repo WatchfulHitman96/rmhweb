@@ -204,7 +204,8 @@ const SuccessStoriesPage = () => {
         { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin.jpg"},
         { name: "Kohima Roy", img: "/img/success_stories/kohima_roy.jpg"},
         { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin_new.jpg"},
-        { name: "Tandrima Das", img: "/img/success_stories/Tandrima_Das.jpg"}
+        { name: "Tandrima Das", img: "/img/success_stories/Tandrima_Das.jpg"},
+        { name: "Sreetama Saha", img:"/img/success_stories/Sreetama_Saha.jpeg"}
     ];
     return (
         <div className="p-8 md:p-12 flex-1 flex flex-col">
