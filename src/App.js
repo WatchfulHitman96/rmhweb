@@ -207,7 +207,7 @@ const SuccessStoriesPage = () => {
         { name: "Tandrima Das", img: "/img/success_stories/Tandrima_Das.jpg"},
         { name: "Sreetama Saha", img:"/img/success_stories/Sreetama_Saha.jpeg"},
         { name: "Smriti Biswas", img:"/img/success_stories/smriti_biswas.jpeg"},
-        { name: "Arpita Mondal", img:"/img/success_stories/arpita_modal.jpeg"}
+        { name: "Arpita Mondal", img:"/img/success_stories/arpita_mondal.jpeg"}
         
     ];
     return (
