@@ -208,7 +208,7 @@ const SuccessStoriesPage = () => {
         { name: "Sreetama Saha", img:"/img/success_stories/Sreetama_Saha.jpeg"},
         { name: "Smriti Biswas", img:"/img/success_stories/smriti_biswas.jpeg"},
         { name: "Arpita Mondal", img:"/img/success_stories/arpita_mondal.jpeg"},
-        { name: "Mukkaber Hossain", img:"/img/success_stories/Mukkaber_Hossain.jpeg"},
+        { name: "Mukabber Hossain", img:"/img/success_stories/Mukkaber_Hossain.jpeg"},
         { name: "Sagar Ghosh", img:"/img/success_stories/Sagar_Ghosh.jpeg"},
         { name: "Sujoy Mallick", img:"/img/success_stories/Sujoy_Mallick.jpeg"}
         
