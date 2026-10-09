@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
     Rocket, Sparkles, Home, Info, Users, Book, Award, Mail, // Existing icons
-    Hospital, ClipboardList, BriefcaseMedical, FlaskConical,  Stethoscope,  GraduationCap, DollarSign,  Facebook, Phone, MessageSquareText
+    Hospital, ClipboardList, BriefcaseMedical, FlaskConical, Stethoscope, GraduationCap, DollarSign, Facebook, Phone, MessageSquareText
 } from 'lucide-react'; // Importing all necessary icons
 
 
@@ -198,20 +198,21 @@ const SubjectsPage = () => {
 // --- Success Stories Page Component ---
 const SuccessStoriesPage = () => {
     const stories = [
-        { name: "Bidhidiptya Mondal", img: "/img/success_stories/bidhidiptya-mondal.jpg" }, 
-        { name: "Debjit Ghosh", img: "/img/success_stories/debjit-ghosh.jpg" },       
-        { name: "Toppers", img: "/img/success_stories/toppers.jpg" },             
-        { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin.jpg"},
-        { name: "Kohima Roy", img: "/img/success_stories/kohima_roy.jpg"},
-        { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin_new.jpg"},
-        { name: "Tandrima Das", img: "/img/success_stories/Tandrima_Das.jpg"},
-        { name: "Sreetama Saha", img:"/img/success_stories/Sreetama_Saha.jpeg"},
-        { name: "Smriti Biswas", img:"/img/success_stories/smriti_biswas.jpeg"},
-        { name: "Arpita Mondal", img:"/img/success_stories/arpita_mondal.jpeg"},
-        { name: "Mukabber Hossain", img:"/img/success_stories/Mukkaber_Hossain.jpeg"},
-        { name: "Sagar Ghosh", img:"/img/success_stories/Sagar_Ghosh.jpeg"},
-        { name: "Sujoy Mallick", img:"/img/success_stories/Sujoy_Mallick.jpeg"}
-        
+        { name: "Bidhidiptya Mondal", img: "/img/success_stories/bidhidiptya-mondal.jpg" },
+        { name: "Debjit Ghosh", img: "/img/success_stories/debjit-ghosh.jpg" },
+        { name: "Toppers", img: "/img/success_stories/toppers.jpg" },
+        { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin.jpg" },
+        { name: "Kohima Roy", img: "/img/success_stories/kohima_roy.jpg" },
+        { name: "Soumyadip Guin", img: "/img/success_stories/Soumyadip_guin_new.jpg" },
+        { name: "Tandrima Das", img: "/img/success_stories/Tandrima_Das.jpg" },
+        { name: "Sreetama Saha", img: "/img/success_stories/Sreetama_Saha.jpeg" },
+        { name: "Smriti Biswas", img: "/img/success_stories/smriti_biswas.jpeg" },
+        { name: "Arpita Mondal", img: "/img/success_stories/arpita_mondal.jpeg" },
+        { name: "Mukabber Hossain", img: "/img/success_stories/Mukkaber_Hossain.jpeg" },
+        { name: "Sagar Ghosh", img: "/img/success_stories/Sagar_Ghosh.jpeg" },
+        { name: "Sujoy Mallick", img: "/img/success_stories/Sujoy_Mallick.jpeg" },
+        { name: "Jayoshri Pal", img: "/img/success_stories/Jayoshri_Pal.jpg" }
+
     ];
     return (
         <div className="p-8 md:p-12 flex-1 flex flex-col">
